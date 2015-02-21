@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://mashtots/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://mashtots/locale/overlay.dtd">
+<overlay id="mashtots-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="log4moz.js"/>
+    <script src="overlay.js"/>
+    <menupopup id="menu_ToolsPopup">
+        <menuitem id="mashtots-menu" label="&helloworld;" 
+              oncommand="MashtotsMozilla.onMenuItemCommand(event);"/>
+    </menupopup>
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="mashtots-toolbar" class="toolbarbutton-1" type="menu"
+            label="&toolbarbutton.label;" tooltiptext="&toolbarbutton.tooltip;"
+            oncommand="" image="chrome://mashtots/skin/images/icon16.png">
+            <panel id="mashtots-panel">
+                <menulist id="mashtots-action" oncommand="MashtotsMozilla.saveData()">
+                    <menupopup>
+                        <menuitem label="&menuitem.mashtots;" value="toMashtots" />
+                        <menuitem label="&menuitem.soviet;" value="toSoviet" />
+                    </menupopup>
+                </menulist>
+                <checkbox id="mashtots-is-only-fields" label="&checkbox.isOnlyFields;" oncommand="MashtotsMozilla.saveData()" />
+                <checkbox id="mashtots-is-save-pages" label="&checkbox.isSavePages;"  oncommand="MashtotsMozilla.saveData()" />
+                <button id="mashtots-convert" label="&button.convert;" onclick="MashtotsMozilla.onConvert()" />
+            </panel>
+        </toolbarbutton>
+    </toolbarpalette>
+</overlay>
