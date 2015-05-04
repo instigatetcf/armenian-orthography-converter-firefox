@@ -1,0 +1,7 @@
+content	 mashtots	content/ contentaccessible=yes
+overlay	 chrome://browser/content/browser.xul	chrome://mashtots/content/overlay.xul
+
+locale	 mashtots	en-US	locale/en-US/
+
+skin	 mashtots	classic/1.0	skin/
+style	 chrome://global/content/customizeToolbar.xul	chrome://mashtots/skin/overlay.css

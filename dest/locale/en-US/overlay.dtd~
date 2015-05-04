@@ -1,0 +1,8 @@
+<!ENTITY helloworld "Հայերեն ուղղագրութեան փոխարկիչ">
+<!ENTITY toolbarbutton.label "Փոխել ուղղագրութիւնը">
+<!ENTITY toolbarbutton.tooltip "Փոխել ուղղագրութիւնը">
+<!ENTITY menuitem.mashtots "Աւանդական ուղղագրութիւն">
+<!ENTITY menuitem.soviet "Սովետական ուղղագրություն">
+<!ENTITY checkbox.isOnlyFields "Միայն մուտքագրման դաշտերը">
+<!ENTITY checkbox.isSavePages "Յիշել փոխարկուած կայքերը">
+<!ENTITY button.convert "Փոխարկել">

@@ -24,11 +24,11 @@
 # ./$APP_NAME.jar  (only if $KEEP_JAR=1)
 # ./files -- the list of packaged files
 #
-# Note: It modifies chrome.manifest when packaging so that it points to 
+# Note: It modifies chrome.manifest when packaging so that it points to
 #       chrome/$APP_NAME.jar!/*
 
 #
-# default configuration file is ./config_build.sh, unless another file is 
+# default configuration file is ./config_build.sh, unless another file is
 # specified in command-line. Available config variables:
 APP_NAME=          # short-name, jar and xpi files name. Must be lowercase with no spaces
 CHROME_PROVIDERS=  # which chrome providers we have (space-separated list)
@@ -72,6 +72,8 @@ if [ -z $APP_NAME ]; then
   exit;
 fi
 
+$BEFORE_BUILD
+
 ROOT_DIR=`pwd`
 TMP_DIR=build
 
@@ -81,8 +83,6 @@ set -x
 # remove any left-over files from previous build
 rm -f $APP_NAME.jar $APP_NAME.xpi files
 rm -rf $TMP_DIR
-
-$BEFORE_BUILD
 
 # verbose, create each non-existent directorys
 mkdir -v -p $TMP_DIR/chrome
