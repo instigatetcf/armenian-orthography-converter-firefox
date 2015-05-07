@@ -16,6 +16,6 @@ Use build_mac.sh to build project on mac and linux.
 
     ./build_mac.sh
 
-User build.sh to build project on windows.
+Use build.sh to build project on windows.
 
     sh build.sh
