@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/instigatetcf/armenian-orthography-converter-chrome.git"
+    "url": "https://github.com/instigatetcf/armenian-orthography-converter-firefox.git"
   },
   "author": "",
   "license": "GNU GPL v3",
   "bugs": {
-    "url": "https://github.com/instigatetcf/armenian-orthography-converter-chrome/issues"
+    "url": "https://github.com/instigatetcf/armenian-orthography-converter-firefox/issues"
   },
-  "homepage": "https://github.com/instigatetcf/armenian-orthography-converter-chrome",
+  "homepage": "https://github.com/instigatetcf/armenian-orthography-converter-firefox",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
