@@ -2,7 +2,7 @@
 
 FireFox extension based on https://github.com/instigatetcf/armenian-orthography-converter/
 
-## Grunt tasks
+## Build code
 
 Use following task to create production build of extension
 
@@ -12,7 +12,7 @@ Use following task to create development build of extension
 
     grunt build-dev
 
-## Build 
+## Build extension
 
 Use build_mac.sh to build project on mac and linux.
 
