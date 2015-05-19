@@ -1,5 +1,5 @@
 /*
- *  Armenian Orthography Converter 2.0.6
+ *  Armenian Orthography Converter 2.0.7
  */
 
 (function (window, exports) {
@@ -521,4 +521,5 @@
      */
     mashtots.sovietToMashtots = sovietToMashtots;
     mashtots.mashtotsToSoviet = mashtotsToSoviet;
+    mashtots.replace = replace;
 }(typeof window === 'object' ? window : null, typeof exports === 'object' ? exports : null));
