@@ -5,7 +5,7 @@
     <script src="log4moz.js"/>
     <script src="overlay.js"/>
     <menupopup id="menu_ToolsPopup">
-        <menuitem id="mashtots-menu" label="&helloworld;" 
+        <menuitem id="mashtots-menu" label="&helloworld;"
               oncommand="MashtotsMozilla.onMenuItemCommand(event);"/>
     </menupopup>
     <toolbarpalette id="BrowserToolbarPalette">

@@ -3,7 +3,7 @@ var MashtotsMozilla = {
     write: function(file, data, callback){
         Components.utils.import("resource://gre/modules/NetUtil.jsm");
         Components.utils.import("resource://gre/modules/FileUtils.jsm");
-        
+
         let fd = FileUtils.getFile('ProfD', [file]);
         let ostream = FileUtils.openSafeFileOutputStream(fd);
         let converter = Components.classes["@mozilla.org/intl/scriptableunicodeconverter"].
@@ -12,7 +12,7 @@ var MashtotsMozilla = {
         let istream = converter.convertToInputStream(data);
         NetUtil.asyncCopy(istream, ostream, function(status) {
             if (!Components.isSuccessCode(status)) {
-                
+
             }
             callback && callback(Components.isSuccessCode(status));
         });
@@ -20,7 +20,7 @@ var MashtotsMozilla = {
     read: function(file, callback){
         Components.utils.import("resource://gre/modules/NetUtil.jsm");
         Components.utils.import("resource://gre/modules/FileUtils.jsm");
-        
+
         let fd = FileUtils.getFile('ProfD', [file]);
         NetUtil.asyncFetch(fd, function(inputStream, status) {
             if (!Components.isSuccessCode(status)) {
@@ -52,7 +52,7 @@ var MashtotsMozilla = {
         MashtotsMozilla.read('mashtots.json', function(data){
             try{
                 MashtotsMozilla._data = JSON.parse(data);
-                
+
                 if(typeof(MashtotsMozilla._data.action) != 'undefined'){
                     document.getElementById('mashtots-action').value = MashtotsMozilla._data.action;
                 }
@@ -82,7 +82,7 @@ var MashtotsMozilla = {
     },
     conver: function(isSaveSettings){
         @@files
-        
+
         let action = document.getElementById('mashtots-action').value;
         let isOnlyFields = document.getElementById('mashtots-is-only-fields').checked;
         let isSavePages = document.getElementById('mashtots-is-save-pages').checked;
@@ -93,7 +93,7 @@ var MashtotsMozilla = {
         'mashtotsConfig.isSavePages = "' + isSavePages + '";'+
         '';
         this.injectCode(code);
-        
+
         this.saveData();
         /*
         MashtotsMozilla.write('mashtots.json', JSON.stringify({
@@ -109,7 +109,7 @@ var MashtotsMozilla = {
             });
         });
         */
-        
+
         this.injectScript('chrome://mashtots/skin/inject/injection.js');
     }
 };

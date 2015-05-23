@@ -2,7 +2,7 @@
 <!ENTITY toolbarbutton.label "Փոխել ուղղագրութիւնը">
 <!ENTITY toolbarbutton.tooltip "Փոխել ուղղագրութիւնը">
 <!ENTITY menuitem.mashtots "Աւանդական ուղղագրութիւն">
-<!ENTITY menuitem.soviet "Սովետական ուղղագրություն">
+<!ENTITY menuitem.soviet "Արդի ուղղագրություն">
 <!ENTITY checkbox.isOnlyFields "Միայն մուտքագրման դաշտերը">
 <!ENTITY checkbox.isSavePages "Յիշել փոխարկուած կայքերը">
 <!ENTITY button.convert "Փոխարկել">
